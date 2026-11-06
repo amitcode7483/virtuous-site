@@ -328,6 +328,19 @@ footer .abn{font-family:var(--f-mono);font-size:12px}
   .f1{left:0;bottom:16px}.f2{right:0;bottom:84px}
   .float{font-size:12px;padding:8px 11px}
 }
+
+@media (max-width:640px){
+  .process .sec-head{margin-bottom:28px}
+  .steps{grid-template-columns:1fr;row-gap:0;gap:0}
+  .steps::before{display:block;left:21px;right:auto;top:22px;bottom:22px;width:2px;height:auto;background:repeating-linear-gradient(180deg,rgba(255,255,255,.25) 0 6px,transparent 6px 12px)}
+  .steps li{grid-template-columns:44px 1fr;column-gap:16px;row-gap:4px;padding-bottom:24px}
+  .steps li:last-child{padding-bottom:0}
+  .steps li::before{grid-row:span 2;width:44px;height:44px;font-size:18px;margin-bottom:0;position:relative;z-index:1}
+  .steps h3{font-size:19px;align-self:center}
+  .steps p{font-size:15px}
+}
+main,section{overflow-x:clip}
+@media (max-width:640px){.orbit{max-width:min(100%,340px)}.term{right:0}}
 </style>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
